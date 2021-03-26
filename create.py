@@ -1,0 +1,27 @@
+def create():	
+	import os
+	def clear(): os.system('clear')
+	clear()
+	def title(): 
+		os.system('figlet -c Doc Maker | lolcat -p')
+	title()
+	print("\033[31m——————————————————V0.1—————————————————@oguh_65——————————————————————\033[0m")
+	print(" ")
+	print(" ")
+
+	filename = input("\033[33mfile name\033[0m \033[31m>>>\033[0m ")
+	username = input("\033[33musername\033[0m \033[31m>>>\033[0m ")
+	password = input("\033[33mpassword\033[0m \033[31m>>>\033[0m ")
+	email = input("\033[33memail-adress\033[0m \033[31m>>>\033[0m ")
+	phonenumber = input("\033[33mphone number\033[0m \033[31m>>>\033[0m ")
+	adress = input("\033[33madress\033[0m \033[31m>>>\033[0m ")
+	open(f"{filename}.txt", "x")
+	file = open(f"{filename}.txt", "a")
+	file.write("Account info : ")
+	file.write(f"\n 	username : {username}")
+	file.write(f"\n 	password : {password}")
+	file.write(f"\nOther info : ")
+	file.write(f"\n 	email : {email}")
+	file.write(f"\n 	phone number : {phonenumber}")
+	file.write(f"\n 	adress : {adress}")
+	file.close()
