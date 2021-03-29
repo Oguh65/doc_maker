@@ -4,7 +4,7 @@ For use doc maker you need to download :
  - figlet (type "apt-get install figlet")
  - lolcat (type "apt-get install lolcat")
 
-For launch doc maker type : python3 doc_maker.py
+For launch doc maker first, create a folder "files" with "mkdir files" and type : python3 doc_maker.py
 
 Edit All not work !
 
