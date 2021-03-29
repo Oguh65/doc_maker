@@ -15,7 +15,7 @@ def field():
 	info = input("\033[33minfo\033[0m \033[31m>>>\033[0m ")
 	name2 = input("\033[33mname\033[0m \033[31m>>>\033[0m ")
 	info2 = input("\033[33minfo\033[0m \033[31m>>>\033[0m ")
-	file = open(f"{filename}.txt", "a")
+	file = open(f"files/{filename}.txt", "a")
 	file.write(f"\n{fieldname} : ")
 	file.write(f"\n 	{name} : {info}")
 	file.write(f"\n 	{name2} : {info2}")

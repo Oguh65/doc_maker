@@ -15,7 +15,7 @@ def editall():
 	email = input("\033[33memail-adress\033[0m \033[31m>>>\033[0m ")
 	phonenumber = input("\033[33mphone number\033[0m \033[31m>>>\033[0m ")
 	adress = input("\033[33madress\033[0m \033[31m>>>\033[0m ")
-	file = open(f"{filename}.txt", "a")
+	file = open(f"files/{filename}.txt", "a")
 	file.write("Account info : ")
 	file.write(f"\n 	username : {username}")
 	file.write(f"\n 	password : {password}")
